@@ -39,47 +39,6 @@ function App() {
     }
   };
 
-  // //! ----------------------------добавить контакт
-  // const forSubmitHandler = text => {
-  //   //генерация id
-  //   const сontactsNew = {
-  //     id: shortid.generate(),
-  //     ...text,
-  //   };
-  //   const someContact = contacts.some(
-  //     contact => contact.name.toLowerCase() === text.name.toLowerCase(),
-  //   );
-  //   if (someContact) {
-  //     alert(`${text.name} is already in contacts`);
-  //     return;
-  //   }
-  // //------------------- добавляем новый контакт
-  // setContacts(prevState => [сontactsNew, ...prevState]);
-  //};
-
-  // //!-----------------------удалить контакт
-  // const deleteContacts = contactsId => {
-  //   setContacts(contacts =>
-  //     contacts.filter(contact => contact.id !== contactsId),
-  //   );
-  // };
-
-  // //!------------------------фильтр
-  // const changeFilter = event => {
-  //   return setFilter(event.currentTarget.value);
-  // };
-
-  // //!-----------------поиск по фильтру
-  // const getVisisbleContacts = () => {
-  //   const normoliseFilter = filter.toLowerCase();
-
-  //   return contacts.filter(contact =>
-  //     contact.name.toLowerCase().includes(normoliseFilter),
-  //   );
-  // };
-
-  // const getFilterVisisbleContacts = getVisisbleContacts();
-
   return (
     <div className={s.app}>
       <h1 className={s.title}>Phonebook</h1>
