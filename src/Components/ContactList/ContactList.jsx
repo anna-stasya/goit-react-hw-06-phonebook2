@@ -30,20 +30,14 @@ const getVisisbleContacts = (allContacts, filter) => {
 };
 
 const mapStateToProps = state => ({
-  contacts: getVisisbleContacts(state.items, state.filter),
+  contacts: getVisisbleContacts(state.contacts.items, state.contacts.filter),
 });
-
 
 const mapDispatchToProps = dispatch => ({
   onDeleteContacts: id => dispatch(deleteContact(id)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ContactList);
-
-
-
-
-
 
 //-----------------другой вариант записи mapStateToProps
 // const mapStateToProps = state => {

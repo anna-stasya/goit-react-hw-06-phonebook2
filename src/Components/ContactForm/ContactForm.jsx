@@ -44,7 +44,6 @@ function ContactForm({ onSubmit }) {
     setNumber('');
   };
 
-
   return (
     <form className={s.form} onSubmit={handleSabmit}>
       <label className={s.label}>
@@ -84,8 +83,4 @@ const mapDispatchToProps = dispatch => ({
   onSubmit: value => dispatch(addContact(value)),
 });
 
-
-
 export default connect(null, mapDispatchToProps)(ContactForm);
-
-//export default ContactForm;
